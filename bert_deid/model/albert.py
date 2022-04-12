@@ -9,7 +9,14 @@ import torch.nn as nn
 from torch.nn import CrossEntropyLoss, MSELoss
 
 from transformers import AlbertModel, AlbertPreTrainedModel
-from transformers.modeling_albert import ALBERT_START_DOCSTRING, ALBERT_INPUTS_DOCSTRING
+# from transformers.modeling_albert import ALBERT_START_DOCSTRING, ALBERT_INPUTS_DOCSTRING
+from transformers.models.albert.modeling_albert import (
+    ALBERT_INPUTS_DOCSTRING,
+    ALBERT_START_DOCSTRING,
+    # AlbertModel,
+    # AlbertPreTrainedModel,
+    # AlbertTransformer,
+)
 from transformers.file_utils import add_start_docstrings
 
 logger = logging.getLogger(__name__)
